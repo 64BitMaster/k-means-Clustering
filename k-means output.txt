@@ -1,0 +1,261 @@
+Distance between (0,0) and (0,0) is 0.0.
+Distance between (0,0) and (1,0) is 1.0.
+Distance between (0,0) and (0,1) is 1.0.
+Closest centroid to (0,0) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (1,0) and (0,0) is 1.0.
+Distance between (1,0) and (1,0) is 0.0.
+Distance between (1,0) and (0,1) is 1.4142135623730951.
+Closest centroid to (1,0) is Centroid 2 @ (1,0)
+Adding point to Centroid 2s group...
+
+Distance between (0,1) and (0,0) is 1.0.
+Distance between (0,1) and (1,0) is 1.4142135623730951.
+Distance between (0,1) and (0,1) is 0.0.
+Closest centroid to (0,1) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (1,1) and (0,0) is 1.4142135623730951.
+Distance between (1,1) and (1,0) is 1.0.
+Distance between (1,1) and (0,1) is 1.0.
+Closest centroid to (1,1) is Centroid 2 @ (1,0)
+Closest centroid to (1,1) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (0,8) and (0,0) is 8.0.
+Distance between (0,8) and (1,0) is 8.06225774829855.
+Distance between (0,8) and (0,1) is 7.0.
+Closest centroid to (0,8) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (0,9) and (0,0) is 9.0.
+Distance between (0,9) and (1,0) is 9.055385138137417.
+Distance between (0,9) and (0,1) is 8.0.
+Closest centroid to (0,9) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (1,8) and (0,0) is 8.06225774829855.
+Distance between (1,8) and (1,0) is 8.0.
+Distance between (1,8) and (0,1) is 7.0710678118654755.
+Closest centroid to (1,8) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (1,9) and (0,0) is 9.055385138137417.
+Distance between (1,9) and (1,0) is 9.0.
+Distance between (1,9) and (0,1) is 8.06225774829855.
+Closest centroid to (1,9) is Centroid 3 @ (0,1)
+Adding point to Centroid 3s group...
+
+Distance between (8,0) and (0,0) is 8.0.
+Distance between (8,0) and (1,0) is 7.0.
+Distance between (8,0) and (0,1) is 8.06225774829855.
+Closest centroid to (8,0) is Centroid 2 @ (1,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,0) and (0,0) is 9.0.
+Distance between (9,0) and (1,0) is 8.0.
+Distance between (9,0) and (0,1) is 9.055385138137417.
+Closest centroid to (9,0) is Centroid 2 @ (1,0)
+Adding point to Centroid 2s group...
+
+Distance between (8,1) and (0,0) is 8.06225774829855.
+Distance between (8,1) and (1,0) is 7.0710678118654755.
+Distance between (8,1) and (0,1) is 8.0.
+Closest centroid to (8,1) is Centroid 2 @ (1,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,1) and (0,0) is 9.055385138137417.
+Distance between (9,1) and (1,0) is 8.06225774829855.
+Distance between (9,1) and (0,1) is 9.0.
+Closest centroid to (9,1) is Centroid 2 @ (1,0)
+Adding point to Centroid 2s group...
+
+Before averaging:
+                         (0,0)
+                         (1,0)
+                         (0,1)
+
+Calculating new centroid locations...
+
+After averaging:
+                         (0,0)
+                         (7,0)
+                         (0,6)
+
+
+Distance between (0,0) and (0,0) is 0.0.
+Distance between (0,0) and (7,0) is 7.0.
+Distance between (0,0) and (0,6) is 6.0.
+Closest centroid to (0,0) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (1,0) and (0,0) is 1.0.
+Distance between (1,0) and (7,0) is 6.0.
+Distance between (1,0) and (0,6) is 6.082762530298219.
+Closest centroid to (1,0) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (0,1) and (0,0) is 1.0.
+Distance between (0,1) and (7,0) is 7.0710678118654755.
+Distance between (0,1) and (0,6) is 5.0.
+Closest centroid to (0,1) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (1,1) and (0,0) is 1.4142135623730951.
+Distance between (1,1) and (7,0) is 6.082762530298219.
+Distance between (1,1) and (0,6) is 5.0990195135927845.
+Closest centroid to (1,1) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (0,8) and (0,0) is 8.0.
+Distance between (0,8) and (7,0) is 10.63014581273465.
+Distance between (0,8) and (0,6) is 2.0.
+Closest centroid to (0,8) is Centroid 3 @ (0,6)
+Adding point to Centroid 3s group...
+
+Distance between (0,9) and (0,0) is 9.0.
+Distance between (0,9) and (7,0) is 11.40175425099138.
+Distance between (0,9) and (0,6) is 3.0.
+Closest centroid to (0,9) is Centroid 3 @ (0,6)
+Adding point to Centroid 3s group...
+
+Distance between (1,8) and (0,0) is 8.06225774829855.
+Distance between (1,8) and (7,0) is 10.0.
+Distance between (1,8) and (0,6) is 2.23606797749979.
+Closest centroid to (1,8) is Centroid 3 @ (0,6)
+Adding point to Centroid 3s group...
+
+Distance between (1,9) and (0,0) is 9.055385138137417.
+Distance between (1,9) and (7,0) is 10.816653826391969.
+Distance between (1,9) and (0,6) is 3.1622776601683795.
+Closest centroid to (1,9) is Centroid 3 @ (0,6)
+Adding point to Centroid 3s group...
+
+Distance between (8,0) and (0,0) is 8.0.
+Distance between (8,0) and (7,0) is 1.0.
+Distance between (8,0) and (0,6) is 10.0.
+Closest centroid to (8,0) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,0) and (0,0) is 9.0.
+Distance between (9,0) and (7,0) is 2.0.
+Distance between (9,0) and (0,6) is 10.816653826391969.
+Closest centroid to (9,0) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (8,1) and (0,0) is 8.06225774829855.
+Distance between (8,1) and (7,0) is 1.4142135623730951.
+Distance between (8,1) and (0,6) is 9.433981132056603.
+Closest centroid to (8,1) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,1) and (0,0) is 9.055385138137417.
+Distance between (9,1) and (7,0) is 2.23606797749979.
+Distance between (9,1) and (0,6) is 10.295630140987.
+Closest centroid to (9,1) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Before averaging:
+                         (0,0)
+                         (7,0)
+                         (0,6)
+
+Calculating new centroid locations...
+
+After averaging:
+                         (0,0)
+                         (7,0)
+                         (0,7)
+
+
+Distance between (0,0) and (0,0) is 0.0.
+Distance between (0,0) and (7,0) is 7.0.
+Distance between (0,0) and (0,7) is 7.0.
+Closest centroid to (0,0) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (1,0) and (0,0) is 1.0.
+Distance between (1,0) and (7,0) is 6.0.
+Distance between (1,0) and (0,7) is 7.0710678118654755.
+Closest centroid to (1,0) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (0,1) and (0,0) is 1.0.
+Distance between (0,1) and (7,0) is 7.0710678118654755.
+Distance between (0,1) and (0,7) is 6.0.
+Closest centroid to (0,1) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (1,1) and (0,0) is 1.4142135623730951.
+Distance between (1,1) and (7,0) is 6.082762530298219.
+Distance between (1,1) and (0,7) is 6.082762530298219.
+Closest centroid to (1,1) is Centroid 1 @ (0,0)
+Adding point to Centroid 1s group...
+
+Distance between (0,8) and (0,0) is 8.0.
+Distance between (0,8) and (7,0) is 10.63014581273465.
+Distance between (0,8) and (0,7) is 1.0.
+Closest centroid to (0,8) is Centroid 3 @ (0,7)
+Adding point to Centroid 3s group...
+
+Distance between (0,9) and (0,0) is 9.0.
+Distance between (0,9) and (7,0) is 11.40175425099138.
+Distance between (0,9) and (0,7) is 2.0.
+Closest centroid to (0,9) is Centroid 3 @ (0,7)
+Adding point to Centroid 3s group...
+
+Distance between (1,8) and (0,0) is 8.06225774829855.
+Distance between (1,8) and (7,0) is 10.0.
+Distance between (1,8) and (0,7) is 1.4142135623730951.
+Closest centroid to (1,8) is Centroid 3 @ (0,7)
+Adding point to Centroid 3s group...
+
+Distance between (1,9) and (0,0) is 9.055385138137417.
+Distance between (1,9) and (7,0) is 10.816653826391969.
+Distance between (1,9) and (0,7) is 2.23606797749979.
+Closest centroid to (1,9) is Centroid 3 @ (0,7)
+Adding point to Centroid 3s group...
+
+Distance between (8,0) and (0,0) is 8.0.
+Distance between (8,0) and (7,0) is 1.0.
+Distance between (8,0) and (0,7) is 10.63014581273465.
+Closest centroid to (8,0) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,0) and (0,0) is 9.0.
+Distance between (9,0) and (7,0) is 2.0.
+Distance between (9,0) and (0,7) is 11.40175425099138.
+Closest centroid to (9,0) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (8,1) and (0,0) is 8.06225774829855.
+Distance between (8,1) and (7,0) is 1.4142135623730951.
+Distance between (8,1) and (0,7) is 10.0.
+Closest centroid to (8,1) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Distance between (9,1) and (0,0) is 9.055385138137417.
+Distance between (9,1) and (7,0) is 2.23606797749979.
+Distance between (9,1) and (0,7) is 10.816653826391969.
+Closest centroid to (9,1) is Centroid 2 @ (7,0)
+Adding point to Centroid 2s group...
+
+Before averaging:
+                         (0,0)
+                         (7,0)
+                         (0,7)
+
+Calculating new centroid locations...
+
+After averaging:
+                         (0,0)
+                         (7,0)
+                         (0,7)
+
+
+Centroids have not moved locations, so algorithm is complete!
+Final Positions:
+                         (0,0)
+                         (7,0)
+                         (0,7)
