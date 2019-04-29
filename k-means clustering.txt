@@ -1,0 +1,177 @@
+import UIKit
+
+class point {
+    
+    var x = 0
+    var y = 0
+    
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+        
+    }
+    
+    func printPoint() {
+        let tempx = String(x)
+        let tempy = String(y)
+        
+        print("                         (" + tempx + "," + tempy + ")")
+    }
+    
+}
+
+extension point: Equatable {
+    static func == (lhs: point, rhs: point) -> Bool {
+        return
+            (lhs.x == rhs.x) && (lhs.y == rhs.y)
+    }
+}
+
+var trainingData:[point] = [point(x: 0, y: 0),
+                            point(x: 1, y: 0),
+                            point(x: 0, y: 1),
+                            point(x: 1, y: 1),
+                            
+                            point(x: 0, y: 8),
+                            point(x: 0, y: 9),
+                            point(x: 1, y: 8),
+                            point(x: 1, y: 9),
+                            
+                            point(x: 8, y: 0),
+                            point(x: 9, y: 0),
+                            point(x: 8, y: 1),
+                            point(x: 9, y: 1)]
+
+var centroid1 = point(x:0, y:0)
+var centroid2 = point(x:1, y:0)
+var centroid3 = point(x:0, y:1)
+
+var group1:[point] = []
+var group2:[point] = []
+var group3:[point] = []
+
+
+func getDistance(first:point, second:point) -> Double {
+    
+    let distance = sqrt(pow((Double(second.x - first.x)), 2.0) + pow((Double(second.y - first.y)), 2.0))
+    print("Distance between (\(first.x),\(first.y)) and (\(second.x),\(second.y)) is \(distance).")
+    return distance
+}
+
+
+func findNearestCentroid(currentPoint:point) -> point {
+    
+    var returnCentroid:point = currentPoint
+    
+    let distanceTo1 = getDistance(first: currentPoint, second: centroid1)
+    let distanceTo2 = getDistance(first: currentPoint, second: centroid2)
+    let distanceTo3 = getDistance(first: currentPoint, second: centroid3)
+    
+    let minimum = min(min(distanceTo1, distanceTo2), distanceTo3)
+    
+    if minimum == distanceTo1 {
+        print("Closest centroid to (\(currentPoint.x),\(currentPoint.y)) is Centroid 1 @ (\(centroid1.x),\(centroid1.y))")
+        returnCentroid = centroid1
+    }
+    if minimum == distanceTo2 {
+        print("Closest centroid to (\(currentPoint.x),\(currentPoint.y)) is Centroid 2 @ (\(centroid2.x),\(centroid2.y))")
+        returnCentroid = centroid2
+    }
+    if minimum == distanceTo3 {
+        print("Closest centroid to (\(currentPoint.x),\(currentPoint.y)) is Centroid 3 @ (\(centroid3.x),\(centroid3.y))")
+        returnCentroid = centroid3
+    }
+    return returnCentroid
+}
+
+
+func sortPoints(points:[point]) {
+    for point in points {
+        let closestCentroid = findNearestCentroid(currentPoint: point)
+        if closestCentroid == centroid1 {
+            print("Adding point to Centroid 1s group...\n")
+            group1.append(point)
+        }
+        if closestCentroid == centroid2 {
+            print("Adding point to Centroid 2s group...\n")
+            group2.append(point)
+        }
+        if closestCentroid == centroid3 {
+            print("Adding point to Centroid 3s group...\n")
+            group3.append(point)
+        }
+    }
+}
+
+func calculateXAverage(points:[point]) -> Int {
+    
+    var average = 0.0
+    
+    for point in points {
+        average += Double(point.x)
+    }
+    
+    average = (average/Double(points.count))
+    return Int(average)
+}
+
+func calculateYAverage(points:[point]) -> Int {
+    
+    var average = 0.0
+    
+    for point in points {
+        average += Double(point.y)
+    }
+    
+    average = (average/Double(points.count))
+    return Int(average)
+}
+
+func recreateCentroids() -> Bool {
+    let tempCentroid1 = point(x:centroid1.x, y:centroid1.y)
+    let tempCentroid2 = point(x:centroid2.x, y:centroid2.y)
+    let tempCentroid3 = point(x:centroid3.x, y:centroid3.y)
+
+    print("Before averaging:")
+    centroid1.printPoint()
+    centroid2.printPoint()
+    centroid3.printPoint()
+    
+    centroid1.x = calculateXAverage(points: group1)
+    centroid1.y = calculateYAverage(points: group1)
+    
+    centroid2.x = calculateXAverage(points: group2)
+    centroid2.y = calculateYAverage(points: group2)
+    
+    centroid3.x = calculateXAverage(points: group3)
+    centroid3.y = calculateYAverage(points: group3)
+    
+    print("\nCalculating new centroid locations...\n")
+    
+    print("After averaging:")
+    centroid1.printPoint()
+    centroid2.printPoint()
+    centroid3.printPoint()
+    
+    print("\n")
+
+    if (tempCentroid1 == centroid1) && (tempCentroid2 == centroid2) && (tempCentroid3 == centroid3) {
+        print("Centroids have not moved locations, so algorithm is complete!")
+        return false
+    }
+    else {
+        return true
+    }
+    
+}
+
+sortPoints(points: trainingData)
+while (recreateCentroids()) {
+    sortPoints(points: trainingData)
+}
+
+print("Final Positions:")
+
+centroid1.printPoint()
+centroid2.printPoint()
+centroid3.printPoint()
